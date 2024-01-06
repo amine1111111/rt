@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mc  : #0f1921 ;
+    --sc : #172027 ;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+
+
+body{
+    background: var(--mc);
+    overflow-x: hidden !important;
+}
+
+
+
+.line{
+    width: 100px;
+    height: 2px;
+    background: white;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.off{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.card{
+    background: var(--mc);
+    border: 1px solid white;
+}
+
+
+
+/*comment*/
+.comment{
+    height:105vh;
+    background:url(../img/plate.jpg) center/cover no-repeat;
+    display: grid;
+    place-items: center;
+}
+.comment h2 {
+    width: 80%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+/*comment*/
+
+
+.bmenu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+.bmenu h3{
+    text-transform: uppercase;
+    margin-block: 2rem;
+}
+
+.minf .p{
+    flex: 1;
+}
+
+.minf span{
+    margin-block: auto;
+}
+
+.minf{
+    border-bottom-style: dotted !important;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+footer{background: var(--sc);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(width <= 768px) {
+.off{
+    justify-content: center;
+}
+
+.off, .bmenu{
+       grid-template-columns: initial;
+}
+
+.off .card{
+    margin-top: 3rem;
+}
+
+.bmenu h3{margin-block: 4rem;}
+}
+
+@media(width<= 992px){
+    .off{
+        grid-template-columns: initial;
+        justify-content: center;
+    }
+}

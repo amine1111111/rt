@@ -1,0 +1,135 @@
+
+
+header{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+header a{
+    color: white;
+    padding-block: 1rem;
+}
+
+
+
+
+nav li {
+    margin-inline-end: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+
+nav li:after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    bottom: -0;
+    left: 0;
+    transition: .5s ease;
+}
+
+nav li:hover:after{
+    width: 100%;
+}
+
+
+
+/*menu*/
+.bm{
+    width: 35px;
+    height: 50px;
+    display: none !important;
+    scale: 1.5;
+    cursor: pointer;
+}
+/*menu*/
+
+
+/*aside*/
+aside{
+    border: 1px solid transparent;
+    background: var(--mc);
+    transition:all .7s ease;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 99999;
+}
+
+aside a{
+    color: grey;
+    text-transform: capitalize;
+    margin: 0 .5rem;
+}
+
+aside li:not(:last-child){
+    margin: 1rem 0;
+}
+
+aside li:last-child{
+    margin: 1rem 0 2rem 0;
+}
+aside a:hover{
+    color: white;
+}
+
+
+.show{
+    transform: translate(0);
+}
+.bg{
+    background: var(--mc);
+}
+.w{
+    color: white !important;
+}
+/*aside*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media(width <= 992px){
+
+    nav ul li{display: none;}
+
+    header{
+        min-height: 10vh;
+        background: var(--mc);
+        z-index: 100;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    header img{position: initial ; transform: initial; margin: .5rem 0 0 .5rem;}
+
+    .bm{display:inline-block; padding: .8rem 0; }
+
+}

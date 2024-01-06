@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mc  : #0f1921 ;
+    --sc : #172027 ;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+
+button{
+    z-index: -1;
+}
+ .line{
+    width: 100px;
+    height: 2px;
+    background: white;
+    display: inline-block;
+}
+
+
+body{
+    background: var(--mc) !important;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.box{
+    text-transform: uppercase;
+    min-width: 100%;
+    height: 100vh;
+}
+.info{
+    margin: 15rem 50px;
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+.info i{
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+}
+
+.info h1{
+    font-weight: 600;
+}
+
+
+ .btn{
+    overflow: hidden;
+    position: relative;
+    transition: .5s ease;
+    z-index: 3;
+}
+ .btn::before{
+    content: "";
+    position: absolute;
+    border-radius: 55%;
+    width: 200%;
+    height: 200%;
+    background: white;
+    top: 100%;
+    left: -50%;
+    transition: .5s ease;
+    z-index: -1;
+}
+
+
+ .btn:hover::before{
+    top: -20%;
+}
+
+ .btn:hover{
+    color: black !important;
+}
+
+
+
+.box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: black;
+    opacity: .4;
+}
+/* //slider*/
+
+
+
+
+
+
+.g{
+    width: 100%;
+    background: var(--mc);
+}
+
+
+
+
+
+
+
+
+
+
+.container.cds{
+    background: var(--mc);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.cd{
+    min-width: 200px;
+    height: 200px;
+}
+
+
+
+.cd{
+    background-size:  200px !important;
+    background-position: center !important;
+    transition: .7s ease;
+}
+.cd:hover{
+    scale: 1.1;
+}
+
+.o{background: url(../img/burger.jpg);}
+.t{background: url(../img/gallery3.jpg);}
+.th{background: url(../img/chef2.jpg);}
+.f{background: url(../img/chef3.jpg);}
+.fi{background: url(../img/fsi2.jpg);}
+.s{background: url(../img/plate.jpg);}
+.se{background: url(../img/gallery2.jpg);}
+.e{background: url(../img/cake.jpg);}
+.n{background: url(../img/m.jpg);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(width <= 768px) {
+.sc{height: 70vh;}
+.container.cds{justify-content: center;}
+}
+
+
+@media ( 768px <= width <= 992px){
+    .sc{height: 80vh;}
+}
+

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mc  : #0f1921 ;
+    --sc : #172027 ;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+
+
+body{
+    background: var(--mc);
+    overflow-x: hidden !important;
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    background: white;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*comment*/
+.comment{
+    height:105vh;
+    background:url(../img/fl.jpg) center/cover no-repeat;
+    display: grid;
+    place-items: center;
+}
+.comment h2 {
+    position: relative;
+    width: 80%;
+}
+.comment:before{
+    content: "“";
+    height: 60px;
+    left: 0;
+    line-height: 1;
+    top: 70%;
+    transform: translate(0, -50%);
+}
+
+.comment:after{
+    content: "”";
+    top: -30%;
+    height: 60px;
+    left: 0%;
+    line-height: 1;
+}
+
+.comment:before,
+.comment:after{
+    display: block;
+    font-family: Times New Roman;
+    font-size: 128px;
+    position: relative;
+}
+/*comment*/
+
+
+
+
+
+
+.mtContainer{
+    width: 95%;
+    margin: 0 auto;
+    background: var(--sc);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 7rem;
+}
+
+
+
+
+footer{background: var(--sc);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(width <= 768px) {
+    .comment::after{top: -40%;}
+}
+
+
+@media(width <= 992px) {
+
+.mtContainer{
+    grid-template-columns: initial;
+    place-items: center;
+    width: 80%;
+}
+.tt{
+    border-top: 2px dashed white;
+    padding-top: 3rem;
+}
+
+}
